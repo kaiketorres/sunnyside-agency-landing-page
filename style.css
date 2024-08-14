@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Fraunces";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #3ebeff;
+  padding: 10px;
+  position: fixed; /* Torna a navbar fixa */
+  top: 0; /* Fixa no topo da tela */
+  left: 0;
+  right: 0;
+}
+
+header > section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header > section > p {
+  font-family: "Barlow";
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.HeroHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+  text-align: center;
+  height: 70vh;
+  background-color: #3ebeff;
+  background: url(./images/mobile/image-header.jpg) no-repeat center / cover;
+}
+
+.HeroHome > h1 {
+  color: white;
+  font-family: "Fraunces";
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.HeroTransform,
+.HeroStand,
+.HeroGraphic,
+.HeroPhotography {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 50vh;
+  gap: 20px;
+}
+
+.HeroGraphic {
+  padding-bottom: 100px;
+  height: 100vh;
+  justify-content: flex-end;
+  background: url(images/mobile/image-graphic-design.jpg) no-repeat center /
+    cover;
+}
+
+.HeroPhotography {
+  padding-bottom: 150px;
+  height: 100vh;
+  justify-content: flex-end;
+  background: url(images/mobile/image-photography.jpg) no-repeat center / cover;
+}
+
+.Transform_h1,
+.Stand_h1,
+.Graphic_h1,
+.Photography_h1 {
+  font-family: "Fraunces";
+  font-size: 2.8rem;
+  color: #353f4d;
+}
+
+.Graphic_h1 {
+  color: #215149;
+}
+
+.Photography_h1 {
+  color: #1a5772;
+}
+
+.photo_egg,
+.photo_stand {
+  width: 100%;
+}
+
+.containerTransform,
+.containerStand {
+  width: 80%;
+}
+
+.containerGraphic,
+.containerPhotography {
+  width: 90%;
+}
+
+.Transform_p,
+.Stand_p,
+.Client_p {
+  color: #7c7b88;
+  font-size: 1.3rem;
+}
+
+.Graphic_p,
+.Photography_p {
+  color: #1a7e66;
+  font-size: 1.3rem;
+}
+
+.Photography_p {
+  color: #15678c;
+}
+
+h3 {
+  font-family: "Fraunces";
+  color: #39424f;
+  font-size: 1.5rem;
+}
+
+.HeroTransform > h3 {
+  box-shadow: 0px 10px 0px #f9f2cf;
+}
+
+.HeroStand > h3 {
+  box-shadow: 0px 10px 0px #fdd7d4;
+}
+
+.positionClient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 60px 10px 60px 10px;
+}
+
+.positionClient > img {
+  border-radius: 50%;
+  width: 25%;
+  height: 25%;
+}
+
+.TextClient {
+  margin: 30px;
+}
+
+.TextClient > h1 {
+  text-align: center;
+  font-family: "Fraunces";
+  color: #aaaaaa;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.Client_p {
+  width: 95%;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.jobs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.jobs > p {
+  color: #7c7b88;
+}
+
+.squad_photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.squad_photos > img {
+  width: 50%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #90d4c5;
+  height: 350px;
+  gap: 50px;
+}
+
+footer > h1 {
+  color: #317868;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Barlow";
+}
+
+footer > section > p {
+  color: #488c7d;
+  font-weight: bold;
+}
+
+footer > section {
+  display: flex;
+  gap: 40px;
+}
+
+footer > section > p:hover {
+  color: white;
+}
+
+footer > .iconsSocial > i:hover{
+  color: white;
+}
+
+i {
+  color: #2b7262;
+  cursor: pointer;
+}
+
+.fa-bars {
+  color: white;
+}
+
+.cotainerBar > .divPai > .divFilho > a {
+  font-family: "Barlow";
+  cursor: pointer;
+  color: white;
+  font-size: 1.3rem;
+  border: 1px solid white;
+  border-radius: 10px 0px 0px 10px;
+  padding: 10px 0px 0px 5px;
+}
+
+.divPai {
+  display: none;
+  width: 100%;
+  position: relative;
+  margin-top: 45px;
+  position: fixed;
+}
+
+.divFilho {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  right: 0%;
+  gap: 20px;
+  animation: slide 2s;
+  padding: 20px 0px 20px 20px;
+  height: 220px;
+  width: 200px;
+  background: #3ebfff;
+  box-shadow: 0px 0px 20px #349bcf, -5px -4px 100px #47dcff;
+}
+
+@media (min-width: 1025px) {
+  .HeroHome {
+    background: url(./images/desktop/image-header.jpg) no-repeat center / cover;
+  }
+
+  .photo_egg,
+  .photo_stand {
+    width: 50%;
+  }
+
+  .moveTrasnform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .moveStand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .moveStand {
+    display: flex;
+  }
+
+  .squad_photos > img {
+    width: 25%;
+  }
+
+  .moveClient {
+    display: flex;
+  }
+
+  .HeroGraphic {
+    padding-bottom: 0px;
+    justify-content: center;
+    background: url(images/desktop/image-graphic-design.jpg) no-repeat center /
+      contain;
+  }
+
+  .HeroPhotography {
+    padding-bottom: 0px;
+    justify-content: center;
+    background: url(images/desktop/image-photography.jpg) no-repeat center /
+      contain;
+  }
+
+  .moveHP {
+    display: flex;
+    height: 650px;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .containerPhotoDupla {
+    width: 100%;
+  }
+
+  .Graphic_h1,
+  .Photography_h1 {
+    font-size: 2rem;
+    padding-top: 200px;
+  }
+
+  .Graphic_p,
+  .Photography_p {
+    font-size: 1rem;
+    color: #23584d;
+    font-weight: none;
+  }
+
+  .containerGraphic,
+  .containerPhotography {
+    width: 50%;
+  }
+
+  .positionClient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px 15px 200px 15px;
+}
+}
